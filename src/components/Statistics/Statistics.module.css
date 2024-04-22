@@ -1,0 +1,116 @@
+.divStatistics {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  /* Light background for visibility */
+  border-radius: 12px;
+  /* Rounded corners for a modern look */
+box-shadow: 0 8px 16px #0f4172a9;
+  /* Soft shadow for depth */
+  width: auto;
+  max-width: 80%;
+  transform: translateY(0);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+
+}
+.divStatistics:hover {
+  transform: translateY(-3px) scale(1.02) rotate(-2deg);
+  box-shadow: 0 10px 20px rgba(15, 65, 114, 0.5);
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.labelStat {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #495057;
+  /* Slightly darker color for better contrast */
+}
+
+.value {
+  font-weight: bold;
+}
+
+.valuePercentage {
+  font-size: 20px;
+  font-weight: bold;
+  color: #4E9F3D;
+  line-height: 1.4;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.icons {
+  fill: #0a3962;
+  /* Dark blue color for icons */
+}
+
+.divStatistics:hover {
+  transform: translateY(-3px);
+  /* Lift effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  /* Enhanced shadow on hover */
+}
+.animateIn {
+  opacity: 0;
+  transform: translateY(-20px);
+  /* Start slightly above */
+  animation: slideIn 0.5s ease forwards;
+}
+.labelStat,
+.value,
+.valuePercentage {
+  animation: slideIn 0.5s ease forwards;
+}
+
+/* Stagger the animations using nth-child to delay them slightly */
+.labelStat:nth-child(1),
+.value:nth-child(1),
+.valuePercentage:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.labelStat:nth-child(2),
+.value:nth-child(2),
+.valuePercentage:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.labelStat:nth-child(3),
+.value:nth-child(3),
+.valuePercentage:nth-child(3) {
+  animation-delay: 0.6s;
+}
+  /* Specific styles for each sentiment icon */
+/* Statistics.module.css */
+.icons {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.happyIcon {
+  color: #4CAF50;
+  font-size: 24px;
+}
+
+.neutralIcon {
+  color: #FFEB3B;
+  font-size: 24px;
+}
+
+.sadIcon {
+  color: #F44336;
+  font-size: 24px;
+}
+
+.icons:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s;
+}

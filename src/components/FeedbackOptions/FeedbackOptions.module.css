@@ -1,0 +1,41 @@
+.divFeedback {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.btnOption {
+  padding: 12px 25px;
+  background-color: #606c88;
+  /* Sophisticated dark blue */
+  color: #f0f0f0;
+  /* Soft off-white for text */
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  /* Subtle shadow for depth */
+}
+
+.btnOption:hover {
+  background-color: #84a9ac;
+  /* Lighter, contrasting color on hover */
+  transform: translateY(-3px);
+  /* Slight lift effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  /* Enhanced shadow for 3D effect */
+}
+
+.btnOption:active {
+  background-color: #3b6978;
+  /* Darker shade for active state */
+  transform: translateY(-1px);
+  /* Subtle press-down effect */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  /* Soften shadow to simulate pressing */
+}

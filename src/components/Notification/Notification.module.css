@@ -1,0 +1,32 @@
+.divNotification {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  color: #212529;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px #b32e2e6e;
+  width: auto;
+  max-width: 80%;
+  opacity: 0;
+  transform: translateY(-20px) scale(0.9);
+  animation: slideIn 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.9);
+    /* Start position */
+  }
+
+  100% {
+    opacity: 1;
+    /* Fully visible */
+    transform: translateY(0) scale(1);
+    /* Final position */
+  }
+}
