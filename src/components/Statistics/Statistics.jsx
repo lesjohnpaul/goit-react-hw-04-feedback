@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import css from './Statistics.module.css';
 import { RiEmotionHappyFill } from 'react-icons/ri';
 import { MdOutlineSentimentNeutral } from 'react-icons/md';
@@ -38,12 +37,4 @@ export const Statistics = ({
       </p>
     </div>
   );
-};
-
-Statistics.propTypes = {
-  good: PropTypes.number.isRequired,
-  neutral: PropTypes.number.isRequired,
-  bad: PropTypes.number.isRequired,
-  total: PropTypes.number.isRequired,
-  positivePercentage: PropTypes.number.isRequired,
 };
